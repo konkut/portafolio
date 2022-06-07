@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, user-scalable=no">
+	<meta name="keywords" content="lindos cachorros,konkut,bebes">
+	<meta name="description" content="animalitos de casa los mejores del hogar divertidos en todo momento dek dia y la noche gracias x todo">
+	<meta name="author" content="pedro luis">
+	<meta name="copyright" content="konkut">
+	<meta name="robots" content="index">
+	<meta name="robots" content="follow">
+	<link rel="icon" href="imagen.ico">
+	<link rel="stylesheet" href="maquetacion.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="https://kit.fontawesome.com/6e46b242b3.js" crossorigin="anonymous"></script>
+	<title>maquetacion</title>
+	
+</head>
+<body>
+	<!--<header>
+			<h1>CSS con Luis</h1>	
+		</header>
+		<nav>
+			<ul>
+				<li><a href="_Blank" target="_Blank">Inicio</a></li>
+				<li><a href="_Blank" target="_Blank">Pagina 1</a></li>
+				<li><a href="_Blank" target="_Blank">Pagina 2</a></li>
+				<li><a href="_Blank" target="_Blank">Blog</a></li>
+				<li><a href="_Blank" target="_Blank">Contactos</a></li>
+			</ul>
+		</nav>
+	-->
+		<nav class="nav">
+			<ul class="nav__ul">
+				<li class="nav__li"><i class="fas fa-home"></i><a href="index.html">start</a></li>
+				<li class="nav__li"><i class="fab fa-fort-awesome-alt"></i><a href="photos.html">photos</a></li>
+				<li class="nav__li"><i class="fas fa-toggle-on"></i><a href="maquetacion.html">form</a></li>
+				<li class="nav__li"><i class="fas fa-adjust"></i><a href="">details</a></li>		
+			</ul>
+			
+			<ul class="nav__ul-responsive">
+				<div class="etiqueta">
+			 		<label>|||</label>
+				</div>
+				<div class="nav__container">
+					<li class="nav__li-responsive"><i class="fas fa-home"></i><a href="index.html">start</a></li>
+					<li class="nav__li-responsive"><i class="fab fa-fort-awesome-alt"></i><a href="photos.html">photos</a></li>
+					<li class="nav__li-responsive"><i class="fas fa-toggle-on"></i><a href="maquetacion.html">form</a></li>
+					<li class="nav__li-responsive"><i class="fas fa-adjust"></i><a href="">details</a></li>	
+				</div>	
+			</ul>
+		</nav>
+	<div class="container-div">
+		<section id="section">
+			<fieldset>
+				<legend>Datos personales</legend>
+				<div class="padding">
+					<label for="nombre">Nombres y apellidos:</label>
+					<input type="text" id="nombre" name="nombre" placeholder="escriba su nombre"/><br><br>
+
+					<label for="sexo">Sexo:</label>
+					<select name="seleccion" id="sexo">
+						<option value="value1">Hombre</option>
+						<option value="value2">Mujer</option>
+					</select><br><br>
+
+					<label for="edad">Edad:</label>
+					<input type="checkbox" value="15-20" id="edad" name="edad"/>15-20
+					<input type="checkbox" value="21-25" id="edad" name="edad"/>21-25
+					<input type="checkbox" value="26-30" id="edad" name="edad"/>26-30<br><br>
+
+					<label for="email">Email:</label>
+					<input type="email" id="email" name="email" placeholder="escriba su correo"/><br><br>
+
+					<label for="Estudios">Estudios:</label>
+					<select id="seleccion1">
+						<optgroup label="Ciclo formativo">
+							<option>Tecnico auxiliar</option>
+							<option>Tecnico superior</option>
+							<option>Licenciatura</option>
+						</optgroup>
+						<optgroup label="Estudios superiores">
+							<option>Doctorado</option>
+							<option>Master</option>
+							<option>Grado</option>
+						</optgroup>
+					</select><br><br>
+
+					<label for="Estudios">Elige tu navegador favorito:</label>
+					<input list="browsers" name="browser">
+					<datalist id="browsers">
+						<option value="Chrome"></option>
+						<option value="Firefox"></option>
+						<option value="Opera"></option>
+						<option value="Microsoft Edge"></option>
+						<option value="Safari"></option>
+						<option value="Tor Browser"></option>
+					</datalist><br><br>
+
+					<textarea name="textarea" rows="10" cols="50" placeholder="Escriba aqui tu mensaje"></textarea><br>
+				</div>
+			</fieldset><br>
+			<input type="submit" value="Enviar">
+		</section>
+		<content>
+			<container>
+				<div class="figura"></div>
+				<h1 class="figura__h1">I'm playing</h1>
+			</container>
+			<section class="inputs">
+				<fieldset>
+					<legend>form_one</legend>
+					<form>
+						<label for="text">Indica tu nombre:</label>
+						<input type="text" id="text" name="text" placeholder="ingresa tu nombre" maxlength="10" pattern="[a-zA-Z0-9]+" required="true" ><br>
+						<label for="tel">Indica tu telefono:</label>
+						<input type="tel" id="tel" name="tel" placeholder="ingresa tu numero" pattern="[0-9]{8}" required="true"><br>
+						<label for="edad">Indica tu edad:</label>
+						<input type="text" id="edad" name="edad" placeholder="ingresa tu edad" pattern="[0-9]{18-99}" required="true" autofocus><br>
+						<button type="submit" id="enviar" name="enviar">ENVIAR</button><br>
+					</form>
+				</fieldset>
+				<fieldset>
+					<legend>form_two</legend>
+					<form>
+						<label for="email">Indica tu correo:</label>
+						<input type="email" id="email" name="email"><br>
+						<label for="password">Indica tu contraseña:</label>
+						<input type="password" id="password" name="password"><br>
+						<label for="time">Indica la hora:</label>
+						<input type="time" id="time" name="time"><br>
+						<label for="week">Indica la semana:</label>
+						<input type="week" id="week" name="week"><br>
+						<label for="month">Indica el mes:</label>
+						<input type="month" id="month" name="month"><br>
+						<label for="date">Elige una fecha:</label>
+						<input type="date" id="date" name="date"><br>
+						<label for="number">Indica un numero:</label>
+						<input type="number" id="number" name="number"><br>
+						<label for="range">Selecciona un numero del rango:</label>
+						<input type="range" min="0" max="100" id="range" name="range"><br>
+						<label for="color">Elige un color:</label>
+						<input type="color" id="color" name="color"><br>
+						<label for="url">Indica una URL:</label>
+						<input type="url" id="url" name="url"><br>
+						<label for="file">Selecciona un archivo:</label><br>
+						<input type="file" id="file" name="file"><br>
+
+						<label for="image">Pincha en la imagen:</label>
+						<input type="image" src="fotos/foto22.jpg" width="28" height="28" alt="submit" id="image" name="image"><br>
+						<label for="search">Campo de busqueda:</label>
+						<input type="search" id="search" name="search"><input type="submit" value="Enviar"><br>
+
+						<label for="radio">Esto es un radio boton:</label>
+						<input type="radio" id="radio" name="radio"><br>
+						<label for="checkbox">Acepto condiciones:</label>
+						<input type="checkbox" id="checkbox" name="checkbox"><br>
+						<label for="button"></label>
+						<input type="button" value="Enviar" id="button" name="button"><br>
+					</form>
+				</fieldset>
+			</section>
+		</content>
+		<aside>
+			<label>CALCULADORA</label><br><br>
+			<label>Operaciones suma</label><br>
+			<form oninput="result.value=parseInt(a.value)+parseInt(b.value)">
+				<input type="number" name="a" placeholder="Ingrese un numero"><br>
+				<input type="number" name="b" placeholder="Ingrese otro numero"><br>
+				<label>Resultado:</label>
+				<output name="result"></output>
+			</form><br>
+			<label>Operaciones resta</label><br>
+			<form oninput="result.value=parseInt(a.value)-parseInt(b.value)">
+				<input type="number" name="a" placeholder="Ingrese un numero"><br>
+				<input type="number" name="b" placeholder="Ingrese otro numero"><br>
+				<label>Resultado:</label>
+				<output name="result"></output>
+			</form><br>
+			<label>Operaciones multiplicaion</label><br>
+			<form oninput="result.value=parseInt(a.value)*parseInt(b.value)">
+				<input type="number" name="a" placeholder="Ingrese un numero"><br>
+				<input type="number" name="b" placeholder="Ingrese otro numero"><br>
+				<label>Resultado:</label>
+				<output name="result"></output>
+			</form><br>
+			<label>Operaciones division</label><br>
+			<form oninput="result.value=parseInt(a.value)/parseInt(b.value)">
+				<input type="number" name="a" placeholder="Ingrese un numero"><br>
+				<input type="number" name="b" placeholder="Ingrese otro numero"><br>
+				<label>Resultado:</label>
+				<output name="result"></output>
+			</form>
+		</aside>
+	</div>	
+		<footer>
+			<h4>Leo WEB &copy; 2020</h4>
+		</footer>
+	
+</body>
+</html>
